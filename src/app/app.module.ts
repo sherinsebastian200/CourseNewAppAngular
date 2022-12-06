@@ -15,7 +15,7 @@ const myRoute:Routes=[
     component:AddCourseComponent
   },
   {
-    path:"/view",
+    path:"view",
     component:ViewCourseComponent
 
   }
