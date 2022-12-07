@@ -9,15 +9,16 @@ import { ApiService } from '../api.service';
 export class AddCourseComponent {
   coursetitle=""
   description=""
+  venue=""
   duration=""
   date=""
-  venue=""
+  
   
 constructor(private api:ApiService){}
 
 readValues=()=>
 {
-let data :any = {"courseTitle":this.coursetitle,"courseDescription":this.description,"courseDuration":this.duration,"courseDate":this.date }
+let data :any = {"coursetitle":this.coursetitle,"description":this.description,"venue":this.venue,"duration":this.duration,"date":this.date }
 console.log(data)
 this.api.addCourse(data).subscribe(
   (response :any)=>{
@@ -26,9 +27,10 @@ this.api.addCourse(data).subscribe(
       alert("course added succesfully")
       this.coursetitle=""
       this.description=""
+      this.venue=""
       this.duration=""
       this.date=""
-      this.venue=""
+     
     
       
     } else {

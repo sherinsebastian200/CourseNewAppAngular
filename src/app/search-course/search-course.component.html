@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row" >
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Course Title</label>
+                    <input type="text" class="form-control" name="coursetitle" [(ngModel)]="coursetitle">
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    
+                   <button class="btn btn-success" (click)="readValue()">Search</button>
+                </div>
+            </div>
+<div class="row" *ngFor="let j of searchCourses">
+   
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label for="" class="form-label">Description</label>
+        <input type="text" class="form-control" value="{{j.description}}">
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label for="" class="form-label">Venue</label>
+        <input type="text" class="form-control" value="{{j.venue}}">
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label for="" class="form-label">Duration</label>
+        <input type="text" class="form-control" value="{{j.duration}}">
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label for="" class="form-label">Date</label>
+        <input type="text" class="form-control" value="{{j.date}}">
+    </div>
+    
+</div>
+</div>
+</div>
+</div>
+
