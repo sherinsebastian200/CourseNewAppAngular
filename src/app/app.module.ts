@@ -7,8 +7,9 @@ import { AddCourseComponent } from './add-course/add-course.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { RouterLinkWithHref, RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule  } from '@angular/common/http';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { SearchCourseComponent } from './search-course/search-course.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -18,6 +19,10 @@ const myRoute:Routes=[
     path:"view",
     component:ViewCourseComponent
 
+  },
+  {
+    path:"search",
+    component:SearchCourseComponent
   }
 ]
 
@@ -26,7 +31,8 @@ const myRoute:Routes=[
     AppComponent,
     AddCourseComponent,
     ViewCourseComponent,
-    NavBarComponent
+    NavBarComponent,
+    SearchCourseComponent
   ],
   imports: [
     BrowserModule,

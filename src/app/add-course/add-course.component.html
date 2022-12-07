@@ -9,7 +9,7 @@
                 </div>
                 <div class="col col 12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Description</label>
-                    <input name="description"  [(ngModel)]="description" type="text" class="form-control">
+                    <textarea name="description"  [(ngModel)]="description" type="text" class="form-control"></textarea>
                 </div>
                 <div class="col col 12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Venue</label>
@@ -21,10 +21,10 @@
                 </div>
                 <div class="col col 12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Date</label>
-                    <input  name="date"  [(ngModel)]="date"type="date" name="" id="" class="form-control">
+                    <input  name="date"  [(ngModel)]="date"type="date"  id="" class="form-control">
                     
                 </div>
-                 <div class="col col 12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                 <div class="col col 12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center" >
                     <button (click)="readValues()" class="btn btn-primary">Submit</button>
                 </div>
 
